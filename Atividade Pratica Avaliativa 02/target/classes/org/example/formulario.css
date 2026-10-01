@@ -1,0 +1,19 @@
+.root {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-color: #ddd1d1;
+}
+
+.label {
+    -fx-text-fill: #000000;
+}
+
+.text-field,
+.combo-box {
+    -fx-pref-width: 165px;
+}
+
+.button {
+    -fx-pref-width: 165px;
+    -fx-padding: 7px 12px;
+}
