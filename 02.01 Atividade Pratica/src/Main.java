@@ -1,3 +1,6 @@
+// João Pedro Furiati Sutana
+
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -11,6 +14,8 @@ public class Main {
         JTextField nome = new JTextField();
         JTextField endereco = new JTextField();
 
+        //determinar quais dados são necessários
+
         String[] estados = {
                 "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará",
                 "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão",
@@ -20,15 +25,18 @@ public class Main {
                 "Santa Catarina", "São Paulo", "Sergipe", "Tocantins"
         };
         JComboBox<String> estado = new JComboBox<>(estados);
-
+        
         String[] cargos = {"Gerente de Marketing", "Programador", "Professor", "Vendedor", "Analista", "Psicologo", "Influencer",
                            "Medico", "Piloto", "Cozinheiro", "Quimico", "Biologo", "Fisico", "Agricultor", "Pescador", "Padeiro"
         };
         JComboBox<String> cargo = new JComboBox<>(cargos);
 
-        JButton botao = new JButton("Imprimir Dados");
+        //Os codigos acima servem para criar um botão de opções a ser selecionada
+        //'cargos' e 'estados' armazenam as opçoes que podem ser selecionadas
+        
+        JButton botao = new JButton("Imprimir Dados"); //Botão para confirmar os dados a serem salvos
 
-        JPanel painel = new JPanel(new GridLayout(6, 2, 10, 10));
+        JPanel painel = new JPanel(new GridLayout(6, 2, 10, 10)); //cria um painel
         painel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         painel.add(new JLabel("Informe CPF:"));
@@ -44,6 +52,8 @@ public class Main {
         painel.add(new JLabel());
         painel.add(botao);
 
+        //adiciona os campos para inserir os dados
+
         botao.addActionListener(e -> {
             String dados = "CPF: " + cpf.getText()
                     + "\nNome: " + nome.getText()
@@ -53,11 +63,15 @@ public class Main {
 
             JOptionPane.showMessageDialog(janela, dados, "Mensagem",
                     JOptionPane.INFORMATION_MESSAGE);
+
+            //evento para criar uma nova janela com os dados inseridos anteriormente
         });
 
         janela.add(painel);
         janela.setSize(400, 300);
         janela.setLocationRelativeTo(null);
         janela.setVisible(true);
+
+        //dados da janela (tamanho, posição)
     }
 }
