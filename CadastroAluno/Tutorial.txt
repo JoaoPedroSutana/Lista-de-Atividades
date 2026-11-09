@@ -1,0 +1,9 @@
+﻿TUTORIAL — COMO NAVEGAR PELO SISTEMA
+
+Ao abrir o sistema, você verá a janela Cadastro com três abas: Aluno, Professor e Curso. Clique em uma aba para acessar o respectivo formulário.
+
+- Aluno: informe o nome e o e-mail.
+- Professor: informe o nome e a disciplina.
+- Curso: informe o nome do curso e a carga horária (número inteiro).
+
+Em qualquer aba, preencha os dois campos e clique em Salvar para cadastrar. Para consultar os cadastros daquela aba, clique em Listar; os resultados aparecem na área abaixo dos botões. Cada item mostra o identificador, o nome e a segunda informação do cadastro.
